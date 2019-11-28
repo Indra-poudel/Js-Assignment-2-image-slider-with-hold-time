@@ -90,7 +90,10 @@ function carousel(parentcontainer, carouselImageWrapperId){
     this.generatedot();
     this.getspanArray();
     this.renderDot();
+    this.repeat= setInterval(this.NextSlides.bind(this),3000);
   }
+
+
 
   this.getIndex=function()
   {
